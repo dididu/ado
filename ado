@@ -6,7 +6,7 @@ import re
 from shutil import copyfile
 
 def getParameters():
-    parser = argparse.ArgumentParser(description='Organises Android drawable assets to drawable-<resolution> folders based on file name resolution suffixes (mdpi, hdpi, xhdpi, ...)')
+    parser = argparse.ArgumentParser(description='Android Drawable Organiser. Organises Android drawable assets to drawable-<resolution> folders based on file name resolution suffixes (mdpi, hdpi, xhdpi, ...)')
     parser.add_argument('-i', '--input', help='Path to recursively look for resources', required = True)
     parser.add_argument('-o', '--output', help='Output folder for organised resources', required = True)
     results = parser.parse_args()
