@@ -23,7 +23,7 @@ def getResources(resourcesPath):
     return resourceList
 
 def isDrawable(resource):
-    validExtentions = ('.png', '.avi')
+    validExtentions = ('.png', '.webp')
     if resource.endswith(validExtentions):
         return True
 
